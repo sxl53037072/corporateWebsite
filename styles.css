@@ -283,6 +283,44 @@ input, textarea, select {
     transform: translateY(-2px);
 }
 
+/* 语言切换按钮 */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid var(--color-border-glow);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    margin-right: 0.75rem;
+}
+
+.lang-switcher:hover {
+    background: rgba(0, 240, 255, 0.2);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.lang-switcher svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.lang-switcher:hover svg {
+    transform: rotate(180deg);
+}
+
+.lang-current {
+    min-width: 2rem;
+    text-align: center;
+}
+
 /* 移动端菜单按钮 */
 .mobile-toggle {
     display: none;
@@ -1498,6 +1536,12 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .lang-switcher {
+        margin-right: 0.5rem;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
     }
 
     .hero-decoration {

@@ -32,15 +32,24 @@
 
             <!-- 桌面端导航菜单 -->
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">首页</a></li>
-                <li><a href="#services" class="nav-link">服务</a></li>
-                <li><a href="#cases" class="nav-link">案例</a></li>
-                <li><a href="#about" class="nav-link">关于我们</a></li>
-                <li><a href="#contact" class="nav-link">联系我们</a></li>
+                <li><a href="#home" class="nav-link active" data-i18n="nav_home">首页</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav_services">服务</a></li>
+                <li><a href="#cases" class="nav-link" data-i18n="nav_cases">案例</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">关于我们</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">联系我们</a></li>
             </ul>
 
+            <!-- 语言切换按钮 -->
+            <button class="lang-switcher" id="lang-switcher" aria-label="切换语言">
+                <span class="lang-current" data-i18n="lang_current">中文</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 21v-8m0 0V3m0 10l9-4m-9 4l-9-4"/>
+                    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+                </svg>
+            </button>
+
             <!-- CTA按钮 -->
-            <a href="#contact" class="nav-cta">开始合作</a>
+            <a href="#contact" class="nav-cta" data-i18n="nav_cta">开始合作</a>
 
             <!-- 移动端菜单按钮 -->
             <button class="mobile-toggle" id="mobile-toggle" aria-label="切换菜单">
@@ -51,11 +60,11 @@
         <!-- 移动端菜单 -->
         <div class="mobile-menu" id="mobile-menu">
             <ul>
-                <li><a href="#home" class="mobile-link">首页</a></li>
-                <li><a href="#services" class="mobile-link">服务</a></li>
-                <li><a href="#cases" class="mobile-link">案例</a></li>
-                <li><a href="#about" class="mobile-link">关于我们</a></li>
-                <li><a href="#contact" class="mobile-link">联系我们</a></li>
+                <li><a href="#home" class="mobile-link" data-i18n="nav_home">首页</a></li>
+                <li><a href="#services" class="mobile-link" data-i18n="nav_services">服务</a></li>
+                <li><a href="#cases" class="mobile-link" data-i18n="nav_cases">案例</a></li>
+                <li><a href="#about" class="mobile-link" data-i18n="nav_about">关于我们</a></li>
+                <li><a href="#contact" class="mobile-link" data-i18n="nav_contact">联系我们</a></li>
             </ul>
         </div>
     </nav>
@@ -65,38 +74,38 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                <span>专业软件定制开发</span>
+                <span data-i18n="hero_badge">专业软件定制开发</span>
             </div>
             <h1 class="hero-title">
-                <span class="title-line">用代码</span>
-                <span class="title-line accent">驱动未来</span>
+                <span class="title-line" data-i18n="hero_title_1">用代码</span>
+                <span class="title-line accent" data-i18n="hero_title_2">驱动未来</span>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
                 我们为企业提供端到端的数字化解决方案，从需求分析到产品交付，用技术赋能业务增长
             </p>
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">
-                    <span>免费咨询</span>
+                    <span data-i18n="hero_cta_primary">免费咨询</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
                 <a href="#cases" class="btn btn-secondary">
-                    <span>查看案例</span>
+                    <span data-i18n="hero_cta_secondary">查看案例</span>
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
                     <span class="stat-number">200+</span>
-                    <span class="stat-label">成功项目</span>
+                    <span class="stat-label" data-i18n="stat_projects">成功项目</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">50+</span>
-                    <span class="stat-label">企业客户</span>
+                    <span class="stat-label" data-i18n="stat_clients">企业客户</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">8年</span>
-                    <span class="stat-label">行业经验</span>
+                    <span class="stat-label" data-i18n="stat_experience">行业经验</span>
                 </div>
             </div>
         </div>
@@ -116,9 +125,9 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">我们的服务</span>
-                <h2 class="section-title">全方位技术解决方案</h2>
-                <p class="section-desc">从概念到落地，我们提供完整的技术服务链条</p>
+                <span class="section-tag" data-i18n="services_tag">我们的服务</span>
+                <h2 class="section-title" data-i18n="services_title">全方位技术解决方案</h2>
+                <p class="section-desc" data-i18n="services_desc">从概念到落地，我们提供完整的技术服务链条</p>
             </div>
 
             <div class="services-grid">
@@ -131,19 +140,19 @@
                             <path d="M8 16h32M16 8v32"/>
                         </svg>
                     </div>
-                    <h3 class="card-title">企业级应用开发</h3>
-                    <p class="card-desc">定制化ERP、CRM、OA等管理系统，提升企业运营效率，实现数字化转型</p>
+                    <h3 class="card-title" data-i18n="service_1_title">企业级应用开发</h3>
+                    <p class="card-desc" data-i18n="service_1_desc">定制化ERP、CRM、OA等管理系统，提升企业运营效率，实现数字化转型</p>
                     <ul class="card-features">
-                        <li>微服务架构设计</li>
-                        <li>高并发性能优化</li>
-                        <li>多终端适配支持</li>
+                        <li data-i18n="service_1_feature_1">微服务架构设计</li>
+                        <li data-i18n="service_1_feature_2">高并发性能优化</li>
+                        <li data-i18n="service_1_feature_3">多终端适配支持</li>
                     </ul>
                 </div>
 
                 <!-- 服务卡片 2 -->
                 <div class="service-card featured">
                     <div class="card-glow"></div>
-                    <div class="card-badge">热门</div>
+                    <div class="card-badge" data-i18n="service_badge_hot">热门</div>
                     <div class="card-icon">
                         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="12" y="4" width="24" height="40" rx="4"/>
@@ -151,12 +160,12 @@
                             <path d="M20 8h8"/>
                         </svg>
                     </div>
-                    <h3 class="card-title">移动应用开发</h3>
-                    <p class="card-desc">iOS/Android原生及跨平台App开发，打造流畅的移动体验，覆盖全终端用户</p>
+                    <h3 class="card-title" data-i18n="service_2_title">移动应用开发</h3>
+                    <p class="card-desc" data-i18n="service_2_desc">iOS/Android原生及跨平台App开发，打造流畅的移动体验，覆盖全终端用户</p>
                     <ul class="card-features">
-                        <li>Flutter/React Native</li>
-                        <li>原生性能优化</li>
-                        <li>应用商店发布支持</li>
+                        <li data-i18n="service_2_feature_1">Flutter/React Native</li>
+                        <li data-i18n="service_2_feature_2">原生性能优化</li>
+                        <li data-i18n="service_2_feature_3">应用商店发布支持</li>
                     </ul>
                 </div>
 
@@ -170,12 +179,12 @@
                             <path d="M6 24h36"/>
                         </svg>
                     </div>
-                    <h3 class="card-title">云平台解决方案</h3>
-                    <p class="card-desc">基于AWS、阿里云、腾讯云的云原生架构设计与实施，确保系统稳定可靠</p>
+                    <h3 class="card-title" data-i18n="service_3_title">云平台解决方案</h3>
+                    <p class="card-desc" data-i18n="service_3_desc">基于AWS、阿里云、腾讯云的云原生架构设计与实施，确保系统稳定可靠</p>
                     <ul class="card-features">
-                        <li>容器化部署</li>
-                        <li>自动化运维</li>
-                        <li>弹性伸缩架构</li>
+                        <li data-i18n="service_3_feature_1">容器化部署</li>
+                        <li data-i18n="service_3_feature_2">自动化运维</li>
+                        <li data-i18n="service_3_feature_3">弹性伸缩架构</li>
                     </ul>
                 </div>
 
@@ -190,12 +199,12 @@
                             <path d="M24 24l20-8"/>
                         </svg>
                     </div>
-                    <h3 class="card-title">数据中台建设</h3>
-                    <p class="card-desc">数据仓库、BI分析、数据可视化大屏，让数据成为企业的核心竞争力</p>
+                    <h3 class="card-title" data-i18n="service_4_title">数据中台建设</h3>
+                    <p class="card-desc" data-i18n="service_4_desc">数据仓库、BI分析、数据可视化大屏，让数据成为企业的核心竞争力</p>
                     <ul class="card-features">
-                        <li>实时数据处理</li>
-                        <li>智能报表系统</li>
-                        <li>数据安全合规</li>
+                        <li data-i18n="service_4_feature_1">实时数据处理</li>
+                        <li data-i18n="service_4_feature_2">智能报表系统</li>
+                        <li data-i18n="service_4_feature_3">数据安全合规</li>
                     </ul>
                 </div>
             </div>
@@ -206,15 +215,15 @@
     <section class="tech-stack">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">技术实力</span>
-                <h2 class="section-title">我们的技术栈</h2>
-                <p class="section-desc">采用业界领先的技术，确保项目的质量与可维护性</p>
+                <span class="section-tag" data-i18n="tech_tag">技术实力</span>
+                <h2 class="section-title" data-i18n="tech_title">我们的技术栈</h2>
+                <p class="section-desc" data-i18n="tech_desc">采用业界领先的技术，确保项目的质量与可维护性</p>
             </div>
 
             <div class="tech-categories">
                 <!-- 前端技术 -->
                 <div class="tech-category">
-                    <h3 class="category-title">前端开发</h3>
+                    <h3 class="category-title" data-i18n="tech_frontend">前端开发</h3>
                     <div class="tech-icons">
                         <div class="tech-item">
                             <div class="tech-icon">⚛</div>
@@ -241,7 +250,7 @@
 
                 <!-- 后端技术 -->
                 <div class="tech-category">
-                    <h3 class="category-title">后端开发</h3>
+                    <h3 class="category-title" data-i18n="tech_backend">后端开发</h3>
                     <div class="tech-icons">
                         <div class="tech-item">
                             <div class="tech-icon">N</div>
@@ -268,7 +277,7 @@
 
                 <!-- 数据库与云 -->
                 <div class="tech-category">
-                    <h3 class="category-title">数据库与云</h3>
+                    <h3 class="category-title" data-i18n="tech_database">数据库与云</h3>
                     <div class="tech-icons">
                         <div class="tech-item">
                             <div class="tech-icon">Pg</div>
@@ -300,9 +309,9 @@
     <section id="cases" class="cases">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">成功案例</span>
-                <h2 class="section-title">我们的作品</h2>
-                <p class="section-desc">每一个项目都是我们用心打造的精品</p>
+                <span class="section-tag" data-i18n="cases_tag">成功案例</span>
+                <h2 class="section-title" data-i18n="cases_title">我们的作品</h2>
+                <p class="section-desc" data-i18n="cases_desc">每一个项目都是我们用心打造的精品</p>
             </div>
 
             <div class="cases-grid">
@@ -310,7 +319,7 @@
                 <div class="case-card">
                     <div class="case-image">
                         <div class="case-placeholder case-1">
-                            <span>智慧物流平台</span>
+                            <span data-i18n="case_1_image">智慧物流平台</span>
                         </div>
                         <div class="case-overlay">
                             <a href="#" class="case-link">
@@ -321,9 +330,9 @@
                         </div>
                     </div>
                     <div class="case-content">
-                        <span class="case-tag">企业级应用</span>
-                        <h3 class="case-title">智慧物流管理平台</h3>
-                        <p class="case-desc">为大型物流企业打造的智能调度系统，实现订单管理、路径优化、实时追踪一体化</p>
+                        <span class="case-tag" data-i18n="case_1_tag">企业级应用</span>
+                        <h3 class="case-title" data-i18n="case_1_title">智慧物流管理平台</h3>
+                        <p class="case-desc" data-i18n="case_1_desc">为大型物流企业打造的智能调度系统，实现订单管理、路径优化、实时追踪一体化</p>
                         <div class="case-tech">
                             <span>React</span>
                             <span>Node.js</span>
@@ -336,7 +345,7 @@
                 <div class="case-card">
                     <div class="case-image">
                         <div class="case-placeholder case-2">
-                            <span>医疗预约App</span>
+                            <span data-i18n="case_2_image">医疗预约App</span>
                         </div>
                         <div class="case-overlay">
                             <a href="#" class="case-link">
@@ -347,9 +356,9 @@
                         </div>
                     </div>
                     <div class="case-content">
-                        <span class="case-tag">移动应用</span>
-                        <h3 class="case-title">医疗健康预约平台</h3>
-                        <p class="case-desc">连接患者与医疗机构的预约服务平台，支持在线问诊、预约挂号、报告查询等功能</p>
+                        <span class="case-tag" data-i18n="case_2_tag">移动应用</span>
+                        <h3 class="case-title" data-i18n="case_2_title">医疗健康预约平台</h3>
+                        <p class="case-desc" data-i18n="case_2_desc">连接患者与医疗机构的预约服务平台，支持在线问诊、预约挂号、报告查询等功能</p>
                         <div class="case-tech">
                             <span>Flutter</span>
                             <span>Go</span>
@@ -362,7 +371,7 @@
                 <div class="case-card">
                     <div class="case-image">
                         <div class="case-placeholder case-3">
-                            <span>电商数据中台</span>
+                            <span data-i18n="case_3_image">电商数据中台</span>
                         </div>
                         <div class="case-overlay">
                             <a href="#" class="case-link">
@@ -373,9 +382,9 @@
                         </div>
                     </div>
                     <div class="case-content">
-                        <span class="case-tag">数据中台</span>
-                        <h3 class="case-title">电商数据分析中台</h3>
-                        <p class="case-desc">为电商平台构建的数据分析系统，实时监控销售数据、用户行为分析、智能推荐引擎</p>
+                        <span class="case-tag" data-i18n="case_3_tag">数据中台</span>
+                        <h3 class="case-title" data-i18n="case_3_title">电商数据分析中台</h3>
+                        <p class="case-desc" data-i18n="case_3_desc">为电商平台构建的数据分析系统，实时监控销售数据、用户行为分析、智能推荐引擎</p>
                         <div class="case-tech">
                             <span>Vue.js</span>
                             <span>Python</span>
@@ -392,34 +401,34 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <span class="section-tag">关于我们</span>
-                    <h2 class="section-title">创新驱动，技术为本</h2>
-                    <p class="about-text">
+                    <span class="section-tag" data-i18n="about_tag">关于我们</span>
+                    <h2 class="section-title" data-i18n="about_title">创新驱动，技术为本</h2>
+                    <p class="about-text" data-i18n="about_text_1">
                         智码科技成立于2016年，是一家专注于企业数字化转型的技术服务商。我们拥有一支经验丰富的技术团队，核心成员来自知名互联网公司和科技企业。
                     </p>
-                    <p class="about-text">
+                    <p class="about-text" data-i18n="about_text_2">
                         多年来，我们始终坚持"技术驱动业务"的理念，为超过50家企业客户提供优质的软件定制开发服务。从初创公司到大型集团，我们都能提供最适合的技术解决方案。
                     </p>
                     <div class="about-values">
                         <div class="value-item">
                             <div class="value-icon">◈</div>
                             <div class="value-content">
-                                <h4>技术创新</h4>
-                                <p>持续追踪前沿技术，为客户提供最先进的解决方案</p>
+                                <h4 data-i18n="value_1_title">技术创新</h4>
+                                <p data-i18n="value_1_desc">持续追踪前沿技术，为客户提供最先进的解决方案</p>
                             </div>
                         </div>
                         <div class="value-item">
                             <div class="value-icon">◈</div>
                             <div class="value-content">
-                                <h4>品质至上</h4>
-                                <p>严格的质量管控体系，确保交付的每一个产品都精益求精</p>
+                                <h4 data-i18n="value_2_title">品质至上</h4>
+                                <p data-i18n="value_2_desc">严格的质量管控体系，确保交付的每一个产品都精益求精</p>
                             </div>
                         </div>
                         <div class="value-item">
                             <div class="value-icon">◈</div>
                             <div class="value-content">
-                                <h4>客户为先</h4>
-                                <p>深入理解业务需求，做客户最信赖的技术伙伴</p>
+                                <h4 data-i18n="value_3_title">客户为先</h4>
+                                <p data-i18n="value_3_desc">深入理解业务需求，做客户最信赖的技术伙伴</p>
                             </div>
                         </div>
                     </div>
@@ -431,11 +440,11 @@
                                 <div class="team-stats">
                                     <div class="team-stat">
                                         <span class="team-number">40+</span>
-                                        <span class="team-label">技术专家</span>
+                                        <span class="team-label" data-i18n="team_experts">技术专家</span>
                                     </div>
                                     <div class="team-stat">
                                         <span class="team-number">85%</span>
-                                        <span class="team-label">本科及以上学历</span>
+                                        <span class="team-label" data-i18n="team_education">本科及以上学历</span>
                                     </div>
                                 </div>
                             </div>
@@ -453,9 +462,9 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="section-tag">联系我们</span>
-                    <h2 class="section-title">开启您的数字化之旅</h2>
-                    <p class="contact-desc">
+                    <span class="section-tag" data-i18n="contact_tag">联系我们</span>
+                    <h2 class="section-title" data-i18n="contact_title">开启您的数字化之旅</h2>
+                    <p class="contact-desc" data-i18n="contact_desc">
                         无论您是需要全新的系统开发，还是现有系统的升级改造，我们都将为您提供专业的咨询服务。
                     </p>
                     <div class="contact-methods">
@@ -466,7 +475,7 @@
                                 </svg>
                             </div>
                             <div class="method-content">
-                                <span class="method-label">电话咨询</span>
+                                <span class="method-label" data-i18n="contact_phone_label">电话咨询</span>
                                 <span class="method-value">400-888-9999</span>
                             </div>
                         </div>
@@ -478,7 +487,7 @@
                                 </svg>
                             </div>
                             <div class="method-content">
-                                <span class="method-label">邮箱联系</span>
+                                <span class="method-label" data-i18n="contact_email_label">邮箱联系</span>
                                 <span class="method-value">contact@zhimatech.com</span>
                             </div>
                         </div>
@@ -490,8 +499,8 @@
                                 </svg>
                             </div>
                             <div class="method-content">
-                                <span class="method-label">公司地址</span>
-                                <span class="method-value">北京市海淀区中关村软件园A座</span>
+                                <span class="method-label" data-i18n="contact_address_label">公司地址</span>
+                                <span class="method-value" data-i18n="contact_address_value">北京市海淀区中关村软件园A座</span>
                             </div>
                         </div>
                     </div>
@@ -500,40 +509,40 @@
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <label for="name">您的姓名</label>
-                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                            <label for="name" data-i18n="form_name_label">您的姓名</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="form_name_placeholder" placeholder="请输入您的姓名" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">公司名称</label>
-                            <input type="text" id="company" name="company" placeholder="请输入公司名称">
+                            <label for="company" data-i18n="form_company_label">公司名称</label>
+                            <input type="text" id="company" name="company" data-i18n-placeholder="form_company_placeholder" placeholder="请输入公司名称">
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="phone">联系电话</label>
-                                <input type="tel" id="phone" name="phone" placeholder="请输入联系电话" required>
+                                <label for="phone" data-i18n="form_phone_label">联系电话</label>
+                                <input type="tel" id="phone" name="phone" data-i18n-placeholder="form_phone_placeholder" placeholder="请输入联系电话" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">电子邮箱</label>
-                                <input type="email" id="email" name="email" placeholder="请输入电子邮箱" required>
+                                <label for="email" data-i18n="form_email_label">电子邮箱</label>
+                                <input type="email" id="email" name="email" data-i18n-placeholder="form_email_placeholder" placeholder="请输入电子邮箱" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="service">感兴趣的服务</label>
+                            <label for="service" data-i18n="form_service_label">感兴趣的服务</label>
                             <select id="service" name="service">
-                                <option value="">请选择服务类型</option>
-                                <option value="enterprise">企业级应用开发</option>
-                                <option value="mobile">移动应用开发</option>
-                                <option value="cloud">云平台解决方案</option>
-                                <option value="data">数据中台建设</option>
-                                <option value="other">其他</option>
+                                <option value="" data-i18n="form_service_option_0">请选择服务类型</option>
+                                <option value="enterprise" data-i18n="form_service_option_1">企业级应用开发</option>
+                                <option value="mobile" data-i18n="form_service_option_2">移动应用开发</option>
+                                <option value="cloud" data-i18n="form_service_option_3">云平台解决方案</option>
+                                <option value="data" data-i18n="form_service_option_4">数据中台建设</option>
+                                <option value="other" data-i18n="form_service_option_5">其他</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">项目需求</label>
-                            <textarea id="message" name="message" rows="4" placeholder="请简要描述您的项目需求..."></textarea>
+                            <label for="message" data-i18n="form_message_label">项目需求</label>
+                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="form_message_placeholder" placeholder="请简要描述您的项目需求..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
-                            <span>提交咨询</span>
+                            <span data-i18n="form_submit">提交咨询</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
                             </svg>
@@ -553,16 +562,16 @@
                         <span class="logo-icon">◈</span>
                         <span class="logo-text">智码科技</span>
                     </a>
-                    <p class="footer-desc">
+                    <p class="footer-desc" data-i18n="footer_desc">
                         专业的软件定制化开发服务商，致力于为企业提供高质量的数字化解决方案。
                     </p>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="微信">
+                        <a href="#" class="social-link" aria-label="WeChat">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="微博">
+                        <a href="#" class="social-link" aria-label="Weibo">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.573h.014zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.581-.178-.402-.642.389-1.012.428-1.884.008-2.509-.786-1.178-2.936-1.115-5.402-.034-.002 0-.478.211-.356-.17.236-.744.201-1.368-.167-1.729-.833-.822-3.052.031-4.954 1.904-1.424 1.408-2.251 2.903-2.251 4.203 0 2.513 3.227 4.039 6.383 4.039 4.14 0 6.896-2.407 6.896-4.319 0-1.155-.978-1.809-1.755-1.743zm.725-5.076c-.573-.654-1.422-.979-2.268-.979-.171 0-.345.018-.52.049l.02-.002c-.749.137-1.432.507-1.957 1.063l.003-.003c-.067.069-.111.138-.156.208l-.006.009c-.044.07-.088.138-.111.207l-.004.011a1.312 1.312 0 0 0-.067.206l-.002.011c-.044.208-.044.415 0 .623l.002-.004c.089.415.356.795.711 1.074l.005.004c.604.506 1.386.742 2.191.664.805-.079 1.52-.454 1.995-1.045l-.006.008c.089-.11.178-.221.245-.354l.004-.009c.067-.132.133-.265.178-.42l.003-.013c.044-.154.067-.309.067-.464 0-.509-.222-1.006-.578-1.359l.001.001zm-1.245 1.723a1.059 1.059 0 0 1-.801.378c-.311 0-.6-.143-.8-.378a.976.976 0 0 1-.222-.667c0-.519.404-.94.912-.996.064-.009.129-.009.195 0 .506.057.91.478.91.996 0 .249-.089.481-.222.667h.028zm3.47-2.818c-.961-1.1-2.386-1.643-3.794-1.643-.286 0-.571.024-.856.073l.032-.005c-1.255.232-2.4.847-3.276 1.776l.005-.005c-.111.117-.188.234-.265.351l-.008.014c-.077.118-.154.235-.188.365l-.003.012c-.066.315-.066.629 0 .943l.003-.007c.143.695.569 1.329 1.191 1.79l.009.006c1.007.844 2.31 1.234 3.642 1.127 1.329-.11 2.519-.754 3.323-1.738l.009-.012c.151-.18.299-.36.401-.579l.005-.012c.067-.154.134-.308.178-.489l.004-.016c.044-.18.067-.36.067-.54 0-.849-.373-1.677-.975-2.262l.001.001zm-2.076 2.872a1.768 1.768 0 0 1-1.334.629c-.52 0-.999-.238-1.333-.629a1.625 1.625 0 0 1-.369-1.111c0-.865.676-1.566 1.521-1.66.106-.013.213-.013.32 0 .843.095 1.519.795 1.519 1.66 0 .415-.151.802-.368 1.111h.044z"/>
                             </svg>
@@ -576,38 +585,38 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4>服务项目</h4>
+                    <h4 data-i18n="footer_services_title">服务项目</h4>
                     <ul>
-                        <li><a href="#services">企业级应用</a></li>
-                        <li><a href="#services">移动应用开发</a></li>
-                        <li><a href="#services">云平台方案</a></li>
-                        <li><a href="#services">数据中台</a></li>
+                        <li><a href="#services" data-i18n="footer_service_1">企业级应用</a></li>
+                        <li><a href="#services" data-i18n="footer_service_2">移动应用开发</a></li>
+                        <li><a href="#services" data-i18n="footer_service_3">云平台方案</a></li>
+                        <li><a href="#services" data-i18n="footer_service_4">数据中台</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
-                    <h4>关于公司</h4>
+                    <h4 data-i18n="footer_company_title">关于公司</h4>
                     <ul>
-                        <li><a href="#about">关于我们</a></li>
-                        <li><a href="#cases">成功案例</a></li>
-                        <li><a href="#">加入我们</a></li>
-                        <li><a href="#contact">联系方式</a></li>
+                        <li><a href="#about" data-i18n="footer_about">关于我们</a></li>
+                        <li><a href="#cases" data-i18n="footer_cases">成功案例</a></li>
+                        <li><a href="#" data-i18n="footer_careers">加入我们</a></li>
+                        <li><a href="#contact" data-i18n="footer_contact">联系方式</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
-                    <h4>帮助支持</h4>
+                    <h4 data-i18n="footer_help_title">帮助支持</h4>
                     <ul>
-                        <li><a href="#">常见问题</a></li>
-                        <li><a href="#">服务条款</a></li>
-                        <li><a href="#">隐私政策</a></li>
-                        <li><a href="#">网站地图</a></li>
+                        <li><a href="#" data-i18n="footer_faq">常见问题</a></li>
+                        <li><a href="#" data-i18n="footer_terms">服务条款</a></li>
+                        <li><a href="#" data-i18n="footer_privacy">隐私政策</a></li>
+                        <li><a href="#" data-i18n="footer_sitemap">网站地图</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 智码科技. 保留所有权利. | 京ICP备XXXXXXXX号</p>
+                <p data-i18n="footer_copyright">&copy; 2024 智码科技. 保留所有权利. | 京ICP备XXXXXXXX号</p>
             </div>
         </div>
     </footer>
